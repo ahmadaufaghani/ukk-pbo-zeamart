@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{009B2345-5964-4F8D-8868-C08154B367B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Latihan4</RootNamespace>
+    <AssemblyName>Latihan4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBarang.Designer.cs">
+      <DependentUpon>FormBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDaftar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDaftar.Designer.cs">
+      <DependentUpon>FormDaftar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporanPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanPembelian.Designer.cs">
+      <DependentUpon>FormLaporanPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporanPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporanPenjualan.Designer.cs">
+      <DependentUpon>FormLaporanPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasuk.Designer.cs">
+      <DependentUpon>FormMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembeli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembeli.Designer.cs">
+      <DependentUpon>FormPembeli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembelian.Designer.cs">
+      <DependentUpon>FormPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPenjualan.Designer.cs">
+      <DependentUpon>FormPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPromo.Designer.cs">
+      <DependentUpon>FormPromo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSupplier.Designer.cs">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hash.cs" />
+    <Compile Include="Koneksi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBarang.resx">
+      <DependentUpon>FormBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDaftar.resx">
+      <DependentUpon>FormDaftar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanPembelian.resx">
+      <DependentUpon>FormLaporanPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporanPenjualan.resx">
+      <DependentUpon>FormLaporanPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasuk.resx">
+      <DependentUpon>FormMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPembeli.resx">
+      <DependentUpon>FormPembeli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPembelian.resx">
+      <DependentUpon>FormPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPenjualan.resx">
+      <DependentUpon>FormPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPromo.resx">
+      <DependentUpon>FormPromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSupplier.resx">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-open-box-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-rounded-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-supplier-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buyer-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-discount-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transaction-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_atk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2 %284%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
